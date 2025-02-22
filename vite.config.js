@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173, // You can change this if needed
-    host: "0.0.0.0" // Ensure it binds to all interfaces
+    host: "0.0.0.0" ,// Ensure it binds to all interfaces
+    allowedHosts: ["emotorado-frontend.onrender.com"]
   }
 });
