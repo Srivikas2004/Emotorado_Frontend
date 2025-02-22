@@ -3,7 +3,7 @@ import {BrowserRouter,Route,Routes,Navigate} from "react-router-dom";
 import Login from './Login';
 import Register from './Register';
 import Dashboard from './Dashboard';
-import PageNotFound from './pagenotfound';
+import PageNotFound from './PageNotFound';
 import RefreshHandler from './RefreshHandler';
 import {GoogleOAuthProvider} from '@react-oauth/google';
 import { useState } from 'react';
