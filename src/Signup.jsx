@@ -14,7 +14,7 @@ function Signup({onRegisterClick}) {
         e.preventDefault();
         try {
             
-            const res = await axios.post("http://localhost:8080/auth/signup", formData);
+            const res = await axios.post("https://emotorado-backend.onrender.com/auth/signup", formData);
             alert(res.data.message);
             onRegisterClick(false); 
         } catch (err) {
