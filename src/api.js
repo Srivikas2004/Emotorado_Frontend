@@ -5,5 +5,5 @@ const api=axios.create({
 })
 
 export const googleAuth=(code)=>{
-   return api.get(`/auth/google?code=${code}`)
+   return api.get(`/auth/google/callback?code=${code}`)
 }
