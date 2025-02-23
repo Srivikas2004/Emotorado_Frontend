@@ -142,7 +142,7 @@
     font-size: 20px;
   }
   
-  .login-form,.forgot-form,.reset-form {
+  .login-form,.forgot-form,.reset-form,.signup-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -151,7 +151,7 @@
     max-width: 300px;
   }
   
-  .login-form input,.forgot-forminput,.reset-forminput {
+  .login-form input,.forgot-forminput,.reset-forminput,.signup-forminput {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -168,11 +168,11 @@
     color: #007bff;
   }
   
-  .sign-in-btn,.forgot-formbutton,.reset-formbutton {
+  .sign-in-btn,.forgot-formbutton,.reset-formbutton,.signupbutton {
     width: 100%;
     padding: 10px;
     background-color: #605bff;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -303,6 +303,18 @@
   .reset-form{
     margin:auto;
 
+  }
+
+  .auth-container{
+    display: flex
+    ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+
+  .auth-container{
+    margin: auto;
   }
 
   .forgot-form{

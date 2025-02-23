@@ -1,6 +1,6 @@
 import './App.css'
 import {BrowserRouter,Route,Routes,Navigate} from "react-router-dom";
-import Login from './Login';
+import Signup from './Signup';
 import Register from './Register';
 import Dashboard from './Dashboard';
 import PageNotFound from './PageNotFound';
@@ -29,6 +29,7 @@ function App() {
     <RefreshHandler setIsAuthenticated={setIsAuthenticated}/>
       <Routes>
         <Route path='/login' element={<GoogleAuthWrapper/>}></Route>
+        <Route path='/signup' element={<Signup />} />
         <Route path='/' element={<Navigate to='/login'/>}></Route>
         <Route path='/dashboard' element={<PrivateRoute element={<Dashboard/>}/>}></Route>
         <Route path="/forgot-password" element={<ForgotPassword/>}/>

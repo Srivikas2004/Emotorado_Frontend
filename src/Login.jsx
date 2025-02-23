@@ -6,7 +6,7 @@ import { googleAuth } from "./api";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom'
-function Login() {
+function Login({onRegisterClick}) {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -128,8 +128,8 @@ function Login() {
                     <button type="submit" className="sign-in-btn">Sign In</button>
                 </form>
                 <div className="part">
-                    Don't have an account? <Link onClick={() => console.log("")}>
-                        <span>Register here</span></Link>
+                    Don't have an account? <Link>
+                        <span style={{ cursor: "pointer", color: "blue" }} onClick={onRegisterClick}>Register here</span></Link>
                 </div>
 
             </div>
